@@ -9,6 +9,13 @@ class NoteListAPIView(generics.ListAPIView):
     serializer_class= NoteSerializer
     def get_queryset(self):
         return Note.objects.all()
+# class NoteSearchListAPIView(generics.ListAPIView):
+#     serializer_class = NoteSerializer
+#     def get(seld, request, query):
+#         query_set = Note.objects.filter(title__contains=query)
+#         if query_set:
+#             return response.Response(seld.serializer_class(query_set).data)
+#         return response.Reponse('Not found', status=status.HTTP_404_NOT_FOUND )
     
 class NoteDetailAPIView(generics.ListAPIView):
     serializer_class= NoteSerializer
