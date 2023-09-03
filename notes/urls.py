@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import NoteListAPIView, NoteDetailAPIView, subscribeToNotesAPIView, NoteSearchListAPIView
+from .views import NoteListAPIView, NoteDetailAPIView, subscribeToNotesAPIView #,NoteSearchListAPIView
 urlpatterns=[
     path("notes/<str:slug>", NoteDetailAPIView.as_view(), name="note"),
     path('notes', NoteListAPIView.as_view(), name="notes"),
