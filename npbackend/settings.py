@@ -62,6 +62,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "https://np-backend-api-953021492be4.herokuapp.com",
+    "https://npfrontend-705631660deb.herokuapp.com"
 
 ]
 
